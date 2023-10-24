@@ -56,6 +56,52 @@ public:
     }
 };
 
+class Medico {
+    private:
+    string crm;
+    string especialidade;
+
+    public:
+    string nome;
+
+    Medico (){
+        crm = "Vazio";
+        especialidade ="Vazio";
+        nome = "Vazio";
+    }
+
+    Medico (string _crm, string _especialidade, string _nome){
+        this-> nome = _nome;
+        this-> setCrm(_crm);
+        this-> setEspecialidade(_especialidade);
+    }
+
+    string getCrm (){
+        return this-> crm;
+    }
+    string getEspecialidade(){
+        return this-> especialidade;
+    }
+    string getNome(){
+        return this-> nome;
+    }
+    void setCrm (string _crm){
+        this-> crm = _crm;
+    }
+    void setEspecialidade(string _especialidade){
+        this-> especialidade = _especialidade;
+    }
+    void setNome(string _nome){
+        this-> nome = _nome;
+    }
+
+    void imprimir(){
+        cout << "Nome: "<< nome << endl;
+        cout <<  "CRM: " << crm << endl;
+        cout <<  "Especialidade: " << especialidade << endl;
+    }
+};
+
 int main(){
   return 0;
 }
