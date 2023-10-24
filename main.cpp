@@ -157,11 +157,11 @@ public:
                     getline(cin >> ws, auxCpf);
                     posicao = localizaPaciente(auxCpf);
                     if (posicao != -1) {
-                        cout << "Cadastro de paciente " << pacientes[posicao]->getNome() << " excluído com sucesso!" << endl;
+                        cout << "Cadastro de paciente " << pacientes[posicao]->getNome() << " excluido com sucesso!" << endl;
                         delete pacientes[posicao];
                         pacientes.erase(pacientes.begin() + posicao);
                     } else {
-                        cout << "Paciente com CPF " << auxCpf << " não encontrado." << endl;
+                        cout << "Paciente com CPF " << auxCpf << " nao encontrado." << endl;
                     }
                     break;
 
@@ -192,7 +192,7 @@ public:
                         }
                         
                     } else {
-                        cout << "CPF não encontrado! Digitação incorreta ou usuario não cadastrado" << endl;
+                        cout << "CPF nao encontrado! Digitacao incorreta ou usuario não cadastrado" << endl;
                     }
                     break;
 
@@ -221,7 +221,7 @@ public:
                         cout << "CPF: " << pacientes[posicao]->getCpf() << endl;
                         cout << "Data de Nascimento: " << pacientes[posicao]->getDtNascimento() << endl;
                     } else {
-                        cout << "Paciente com CPF " << auxCpf << " não encontrado." << endl;
+                        cout << "Paciente com CPF " << auxCpf << " nao encontrado." << endl;
                     }
                     break;
 
@@ -229,7 +229,7 @@ public:
                     return;
 
                 default:
-                    cout << "Informe uma das opções disponíveis. Numerais entre 0 e 5." << endl;
+                    cout << "Informe uma das opcoes disponiveis. Numerais entre 0 e 5." << endl;
             }
         } while (op != 0);
     }
@@ -285,15 +285,15 @@ public:
                 break;
 
                 case 2:
-                    cout << "Informe o CRM do Médico que deseja excluir: ";
+                    cout << "Informe o CRM do Medico que deseja excluir: ";
                     getline(cin >> ws, auxCrm);
                     posicao = localizaMedico(auxCrm);
                     if (posicao != -1) {
-                        cout << "Cadastro de paciente " << medicos[posicao]->getNome() << " excluído com sucesso!" << endl;
+                        cout << "Cadastro de paciente " << medicos[posicao]->getNome() << " excluido com sucesso!" << endl;
                         delete medicos[posicao];
                         medicos.erase(medicos.begin() + posicao);
                     } else {
-                        cout << "Medico com CRM " << auxCrm << " não encontrado." << endl;
+                        cout << "Medico com CRM " << auxCrm << " nao encontrado." << endl;
                     }
                     break;
 
@@ -324,7 +324,7 @@ public:
                             cout << medicos[posicao]->getEspecialidade() << endl;
                         }
                     } else {
-                        cout << "CRM não encontrado! Digitação incorreta ou usuario não cadastrado" << endl;
+                        cout << "CRM nao encontrado! Digitacao incorreta ou usuario nao cadastrado" << endl;
                     }
                     break;
 
@@ -339,7 +339,7 @@ public:
                         }
                     } else {
                         cout << endl << "Nenhum medico encontrado!" << endl;
-                        cout << "Utilize a opção 1 para incluir um novo" << endl << endl;
+                        cout << "Utilize a opcao 1 para incluir um novo" << endl << endl;
                     }
                     break;
 
@@ -353,7 +353,7 @@ public:
                         cout << "CRM: " << medicos[posicao]->getCrm() << endl;
                         cout << "Especialidade: " << medicos[posicao]->getEspecialidade() << endl;
                     } else {
-                        cout << "Medico com CPF " << auxCrm << " não encontrado." << endl;
+                        cout << "Medico com CPF " << auxCrm << " nao encontrado." << endl;
                     }
                     break;
 
@@ -361,7 +361,7 @@ public:
                     return;
 
                 default:
-                    cout << "Informe uma das opções disponíveis. Numerais entre 0 e 5." << endl;
+                    cout << "Informe uma das opções disponiveis. Numerais entre 0 e 5." << endl;
             }
         } while (op != 0);
     }
@@ -373,7 +373,7 @@ int main() {
 
     int op;
     do {
-        cout << "Seja bem ao Sistema de Gestão" << endl << "Clinica Médica Sem Dodói Ltda." << endl << endl;
+        cout << "Seja bem ao Sistema de Gestao" << endl << "Clinica Madica Sem Dodoi Ltda." << endl << endl;
         cout << "Escolha uma opção de gerenciamento" << endl << endl;
         cout << "1- Pacientes"<<endl;
         cout <<"2- Medicos"<< endl;
@@ -386,7 +386,7 @@ int main() {
             crudMedico.menu();
         }
         else if (op != 0) {
-            cout << "Por favor escolha uma das opções válidas" << endl << endl;
+            cout << "Por favor escolha uma das opções validas" << endl << endl;
         }
     } while (op != 0);
 
