@@ -376,6 +376,7 @@ int main() {
         cout << "Seja bem ao Sistema de Gestão" << endl << "Clinica Médica Sem Dodói Ltda." << endl << endl;
         cout << "Escolha uma opção de gerenciamento" << endl << endl;
         cout << "1- Pacientes"<<endl;
+        cout <<"2- Medicos"<< endl;
         cout <<"0- Sair" << endl;
         cin >> op;
 
